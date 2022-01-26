@@ -45,6 +45,8 @@ public class NTPRequest implements Serializable{
 	
 	public void calculateOandD() {
 		////
+		this.o = ((t2-t1) + (t3-t4)) / 2;
+		this.d = (t2-t1) + (t4-t3);
 	}
 	
 }
